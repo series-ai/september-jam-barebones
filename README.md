@@ -2,7 +2,7 @@
 
 The blank-slate starting point in this kit: Pixi.js v8, React 19, Tailwind CSS v4, TypeScript, Vite, and the RundotGameAPI SDK wired together with the platform patterns already in place (SDK boot order, host lifecycles, per-player saves, design-unit stage, safe areas) — and no genre assumptions. A bouncing-sprite demo scene proves the whole pipeline; delete it and build your game.
 
-Start here when your game is not a tower defense. If it is, use the kit's tower defense template instead (standalone mirror repo link coming when the mirrors are published) — and either way, it contains working systems you can copy into this one when you need them (audio + settings, leaderboards, rewarded ads, a persistent meta economy). More platform systems (daily rewards, IAP, quests, tutorial) are available as copy-in modules from the [`@series-inc/run-game-helpers`](https://www.npmjs.com/package/@series-inc/run-game-helpers) npm package. For platform details, see the [RUN.game developer docs](https://series-1.gitbook.io/rundot-docs).
+Start here when your game is not a tower defense. If it is, use the tower defense template ([series-ai/september-jam-tower-defense](https://github.com/series-ai/september-jam-tower-defense)) instead — and either way, it contains working systems you can copy into this one when you need them (audio + settings, leaderboards, rewarded ads, a persistent meta economy). More platform systems (daily rewards, IAP, quests, tutorial) are available as copy-in modules from the [`@series-inc/run-game-helpers`](https://www.npmjs.com/package/@series-inc/run-game-helpers) npm package. For platform details, see the [RUN.game developer docs](https://series-1.gitbook.io/rundot-docs).
 
 ## Quick Start
 

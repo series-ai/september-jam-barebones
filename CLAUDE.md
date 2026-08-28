@@ -3,7 +3,8 @@
 The genre-neutral starting point in this jam kit: platform wiring (SDK
 boot, lifecycles, design-unit stage, saves) plus a throwaway demo scene,
 and nothing else. Start here when your game is not a tower defense. The
-kit's tower defense template is built on exactly these patterns and
+kit's tower defense template (standalone mirror:
+github.com/series-ai/september-jam-tower-defense) is built on exactly these patterns and
 contains working systems to copy when you need them: audio buses +
 settings screen, all-time leaderboards, a persistent meta economy, and
 rewarded ads (which came from the npm package
@@ -52,7 +53,7 @@ rewards, IAP, quests, tutorial, and more).
 - **Palette** → the `@theme` block in `src/styles/app.css`.
 - **Orientation** → portrait is default. For landscape: `rundot init --orientation Landscape` and adjust the 9:16 media query in `app.css` (see `ADAPT:`).
 - **Save/persistence** → extend `SaveData`/`parse()` in `src/state/save.ts` and patch the new fields in `main.tsx` step 2. The boot load and lifecycle flushes are already wired.
-- **Platform systems (audio, leaderboards, meta economy, ads, ...)** → copy working implementations from the jam kit's tower defense template, or from the `@series-inc/run-game-helpers` npm package (daily rewards, IAP, quests, tutorial...). Copy the files in — never import that package at runtime.
+- **Platform systems (audio, leaderboards, meta economy, ads, ...)** → copy working implementations from the jam kit's tower defense template (github.com/series-ai/september-jam-tower-defense), or from the `@series-inc/run-game-helpers` npm package (daily rewards, IAP, quests, tutorial...). Copy the files in — never import that package at runtime.
 - **Game config (resolution, DPR, pixel-art)** → `DESIGN_WIDTH` in stage.ts (keep 720 unless art dictates otherwise); DPR cap / texture settings in pixiApp.ts.
 
 All intended edit points carry `ADAPT:` comments — search the source for `ADAPT:` for the full list.
@@ -86,7 +87,7 @@ After ANY recipe, run `npx tsc --noEmit` — the compiler catches leftovers (`no
 
 **"Rename the game"** — `<title>` in index.html, headings in `MainMenu.tsx` + `LoadingScreen.tsx`, `name` in package.json, `SAVE_KEY` in `src/state/save.ts`.
 
-**"Add audio / leaderboards / rewarded ads / a meta economy"** — copy the working system from the jam kit's tower defense template (it documents its own file list in its CLAUDE.md), or copy modules from the `@series-inc/run-game-helpers` npm package. Copy files in; never import that package at runtime.
+**"Add audio / leaderboards / rewarded ads / a meta economy"** — copy the working system from the jam kit's tower defense template (github.com/series-ai/september-jam-tower-defense; it documents its own file list in its CLAUDE.md), or copy modules from the `@series-inc/run-game-helpers` npm package. Copy files in; never import that package at runtime.
 
 ## Verification (after scaffolding a game from this template)
 
